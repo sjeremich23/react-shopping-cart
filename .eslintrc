@@ -1,0 +1,21 @@
+{
+  "extends": ["airbnb", "prettier", "wesbos"],
+  "plugins": ["prettier"],
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "printWidth": 120,
+        "tabWidth": 2
+      }
+    ],
+    "no-unused-vars": "warn",
+    "no-console": "warn",
+    "func-names": "off",
+    "object-shorthand": "off",
+    "class-methods-use-this": "off",
+    "quotes": 0,
+    "react/prop-types": 0,
+    "react/button-has-type": "disable"
+  }
+}
