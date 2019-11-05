@@ -10,5 +10,9 @@ export const CartContextProvider = props => {
     setCart([...cart, item]);
   };
 
-  return <CartContext.Provider value={[cart, addItem]}>{children}</CartContext.Provider>;
+  return (
+    <CartContext.Provider value={[cart, addItem]}>
+      {children}
+    </CartContext.Provider>
+  );
 };

@@ -7,5 +7,9 @@ export const ProductContextProvider = props => {
   const { children } = props;
   const [products] = useState(data);
 
-  return <ProductContext.Provider value={[products]}>{children}</ProductContext.Provider>;
+  return (
+    <ProductContext.Provider value={[products]}>
+      {children}
+    </ProductContext.Provider>
+  );
 };

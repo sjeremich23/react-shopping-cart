@@ -9,7 +9,7 @@ const Item = props => {
 
       <div>
         <h1>{title}</h1>
-        <p>$ {price}</p>
+        <p>${price}</p>
         <button>Remove from cart</button>
       </div>
     </div>

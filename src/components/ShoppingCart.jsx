@@ -7,7 +7,10 @@ import { CartContext } from "../contexts/CartContext";
 const ShoppingCart = () => {
   const [cart] = useContext(CartContext);
 
-  const getCartTotal = () => cart.reduce((acc, value) => acc + value.price, 0).toFixed(2);
+  const getCartTotal = () =>
+    cart
+      .reduce((acc, value) => acc + value.price, 0)
+      .toFixed(2);
 
   return (
     <div className="shopping-cart">

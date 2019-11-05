@@ -7,12 +7,17 @@ import { CartContext } from "../contexts/CartContext";
 
 const Products = () => {
   const [products] = useContext(ProductContext);
+  // eslint-disable-next-line
   const [cart, addItem] = useContext(CartContext);
 
   return (
     <div className="products-container">
       {products.map(product => (
-        <Product key={product.id} product={product} addItem={addItem} />
+        <Product
+          key={product.id}
+          product={product}
+          addItem={addItem}
+        />
       ))}
     </div>
   );
